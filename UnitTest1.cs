@@ -17,7 +17,7 @@ namespace Tests
             caps.AddAdditionalCapability(MobileCapabilityType.DeviceName, "emulator-5554");
             caps.AddAdditionalCapability(MobileCapabilityType.App, "/home/runner/work/clarus-android/clarus-android/android-automation/apk/app-debug.apk");
             caps.AddAdditionalCapability("automationName", "UiAutomator2");
-            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppPackage, "com.example.myapplication");
+           // caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppPackage, "com.example.myapplication");
 
             caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppActivity, "com.example.myapplication.MainActivity");
 
