@@ -19,7 +19,7 @@ namespace Tests
             caps.AddAdditionalCapability("automationName", "UiAutomator2");
            // caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppPackage, "com.example.myapplication");
 
-            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppActivity, "com.example.myapplication.MainActivity");
+           // caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppActivity, "com.example.myapplication.MainActivity");
 
             caps.AddAdditionalCapability(MobileCapabilityType.PlatformName, "Android");
             caps.AddAdditionalCapability(MobileCapabilityType.NewCommandTimeout, 180);
