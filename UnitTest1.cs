@@ -23,7 +23,7 @@ namespace Tests
             caps.AddAdditionalCapability(AndroidMobileCapabilityType.DeviceReadyTimeout, 30000);
             caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppWaitDuration, 30000);
             caps.AddAdditionalCapability(AndroidMobileCapabilityType.AndroidInstallTimeout, 30000);
-            appiumDriver = new AndroidDriver<IWebElement>(new Uri("http://localhost:4723/wd/hub"), caps);
+            appiumDriver = new AndroidDriver<IWebElement>(new Uri("http://localhost:4723/wd/hub"), caps, TimeSpan.FromMinutes(4));
             string path = System.AppContext.BaseDirectory;
         }
 
