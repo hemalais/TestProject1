@@ -19,10 +19,10 @@ namespace Tests
             caps.AddAdditionalCapability("automationName", "UiAutomator2");
             caps.AddAdditionalCapability(MobileCapabilityType.PlatformName, "Android");
             caps.AddAdditionalCapability(MobileCapabilityType.NewCommandTimeout, 180);
-            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AndroidDeviceReadyTimeout, 10000);
-            caps.AddAdditionalCapability(AndroidMobileCapabilityType.DeviceReadyTimeout, 10000);
-            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppWaitDuration, 1300);
-            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AndroidInstallTimeout, 10000);
+            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AndroidDeviceReadyTimeout, 300);
+            caps.AddAdditionalCapability(AndroidMobileCapabilityType.DeviceReadyTimeout, 300);
+            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AppWaitDuration, 180);
+            caps.AddAdditionalCapability(AndroidMobileCapabilityType.AndroidInstallTimeout, 80);
             appiumDriver = new AndroidDriver<IWebElement>(new Uri("http://localhost:4723/wd/hub"), caps);
             string path = System.AppContext.BaseDirectory;
         }
