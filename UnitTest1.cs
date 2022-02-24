@@ -16,8 +16,9 @@ namespace Tests
             DriverOptions caps = new AppiumOptions();
             caps.AddAdditionalCapability(MobileCapabilityType.DeviceName, "emulator-5554");
             caps.AddAdditionalCapability(MobileCapabilityType.App, "/home/runner/work/clarus-android/clarus-android/android-automation/apk/app-debug.apk");
-            caps.AddAdditionalCapability("automationName", "UiAutomator2");
+            caps.AddAdditionalCapability("automationName", "UiAutomator1");
             caps.AddAdditionalCapability(MobileCapabilityType.PlatformName, "Android");
+            caps.AddAdditionalCapability(MobileCapabilityType.NewCommandTimeout, 180);
             appiumDriver = new AndroidDriver<IWebElement>(new Uri("http://localhost:4723/wd/hub"), caps);
             string path = System.AppContext.BaseDirectory;
         }
